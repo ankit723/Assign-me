@@ -22,7 +22,7 @@ const QuestionCard = (props) => {
                                     <th>{question.id}</th>
                                     <th>
                                         {/* <iframe src={question.questionUrl} width="640" height="480" allow="autoplay"></iframe> */}
-                                        <img src="https://drive.google.com/uc?export=view&id=1nFfKHmyXd8dzNIQ9HQTVSIeQn-zqmpwn" alt="question url" />
+                                        <img src={question.questionUrl} alt="question url" />
                                     </th>
                                     <td>{question.questionType}</td>
                                     <td>{question.questionLevel}</td>
