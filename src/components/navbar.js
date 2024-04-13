@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -69,22 +70,22 @@ const Navbar = () => {
                 <summary>Subject</summary>
                 <ul className="p-2" style={{zIndex:"50"}}>
                   <li>
-                    <a href="">Physics</a>
+                    <Link to="/">Physics</Link>
                   </li>
                   <li>
-                    <a href="">BEE</a>
+                    <Link to="/">BEE</Link>
                   </li>
                   <li>
-                    <a href="">IEE</a>
+                    <Link to="/">IEE</Link>
                   </li>
                   <li>
-                    <a href="">Mathematics</a>
+                    <Link to="/math">Mathematics</Link>
                   </li>
                   <li>
-                    <a href="">Computer Science</a>
+                    <Link to="/">Computer Science</Link>
                   </li>
                   <li>
-                    <a href="">IME</a>
+                    <Link to="/">IME</Link>
                   </li>
                 </ul>
               </details>
