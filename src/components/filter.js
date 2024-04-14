@@ -8,15 +8,15 @@ const Filters = ({ qType, qLevel, qTopic }) => {
   console.log(uniqueTopics);
 
   const handleTypeClick = (option) => {
-    qType(option);
+    qType(option==="All"?"":option);
   };
 
   const handleLevelClick = (option) => {
-    qLevel(option);
+    qLevel(option==="All"?"":option);;
   };
 
   const handleTopicClick = (option) => {
-    qTopic(option);
+    qTopic(option==="All"?"":option);
   };
   return (
     <>
@@ -25,13 +25,12 @@ const Filters = ({ qType, qLevel, qTopic }) => {
           <details>
             <summary>Question Type</summary>
             <ul style={{ zIndex: "50" }}>
+            <li>
+                <a onClick={() => handleTypeClick("All")}>All</a>
+              </li>
               <li>
                 <a onClick={() => handleTypeClick("Short")}>Short</a>
               </li>
-              <li>
-                <a onClick={() => handleTypeClick("Mid")}>Mid</a>
-              </li>
-
               <li>
                 <a onClick={() => handleTypeClick("Long")}>Long</a>
               </li>
@@ -44,12 +43,14 @@ const Filters = ({ qType, qLevel, qTopic }) => {
             <summary>Question Level</summary>
             <ul style={{ zIndex: "50" }}>
               <li>
+                <a onClick={() => handleLevelClick("All")}>All</a>
+              </li>
+              <li>
                 <a onClick={() => handleLevelClick("Easy")}>Easy</a>
               </li>
               <li>
                 <a onClick={() => handleLevelClick("Medium")}>Medium</a>
               </li>
-
               <li>
                 <a onClick={() => handleLevelClick("Hard")}>Hard</a>
               </li>
