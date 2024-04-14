@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ankit723.github.io/Assign-me",
+  "homepage": "https://kmr-ankitt.github.io/Assign-me",
   "name": "math-app",
   "version": "0.1.0",
   "private": true,
@@ -23,7 +23,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b main -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
